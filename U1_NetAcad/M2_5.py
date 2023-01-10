@@ -5,15 +5,16 @@ coments for block
 in python
 '''
 
-def ordenar(stack):
-    return len(stack) == 0
+def doble(x):
+    y = x * 2
+    return y
 
 a = [5,2,7,9,3]
 
 for i in range(0, len(a)):
     print(a[i])
-    
-# for j in range(0,len(a)+1 - 2):
+
+# Bubble sort
 for i in range(0, len(a)+1 -2):
     for j in range(0,len(a)+1 - i-2):
         x = a[j]
@@ -23,9 +24,13 @@ for i in range(0, len(a)+1 -2):
             a[j+1] = x
 
 print(a)
+b=10
+if b>10:
+    print("Mayor a 10")
+else:
+    print("menor a 10") 
 
-
-
+print(doble(10))
 
 print(". . . Hecho")
 

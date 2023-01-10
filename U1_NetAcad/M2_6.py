@@ -3,17 +3,20 @@
 import os
 import time
 
-'''
 print("What is your last name")
 lastName = input()
+
 Name = input("What is your name: ")
+
 Edad = int(input("Give me a number: "))  # casting: int() , float()
 print(type(Edad))  # Tipo
+
 complete_name = Name + " " + lastName    # concatenation
 print("Hi", complete_name, "your number is", Edad)
 print("Hola"*2, 2*"Adios")
 
-os.system("cls")
+# os.system("cls")
+
 print("+" + 10 * "-" + "+")
 print(("|" + " " * 10 + "|\n") * 5, end="")
 print("+" + 10 * "-" + "+")
@@ -34,7 +37,7 @@ print(f'{1000000:,}')   # separados por comas
 print(f'{1:0<6d}')      # right padding with 0
 
 print("Hypotenuse length is " + str(leg_c))    # casting  str()
-'''
+
 
 # -----------------------------------------------------------------------------
 
