@@ -24,11 +24,13 @@ keywords = ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class',
             'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 
             'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield','True']
 keywords.insert(2,"Hola")
-print("Conteo", keywords.count())
+
+print("Conteo", len(keywords))
+
 print(keywords)
-print("-----------")
+
 print(keywords[-1], keywords.index('True'))
-print(keywords.pop(), keywords.pop(), keywords.pop(1),keywords[1] )
+print(keywords.pop(), keywords.pop(), keywords.pop(1), keywords[1] )
 
 x=2
 x+=1      # Shortcut operators
@@ -40,5 +42,5 @@ print(y)
 
 a = 6
 b = 3
-a /= 2 * b 
-print(a)
+a /= 2 * b    # a = a / ( 2 * b) 
+print(a) 
