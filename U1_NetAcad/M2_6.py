@@ -66,9 +66,7 @@ res_hor = tot_hor % 24
 print(res_hor,":", res_min)
 
 # Exam
-# 2 The meaning of the keyword parameter is determined by: 
-# 3 The value twenty point twelve times ten raised to the power of eight should be written as: 20.12E8
-# 7 addition precedes multiplication  or  the ** operator uses right-sided binding
+# The value twenty point twelve times ten raised to the power of eight should be written as: 20.12E8
+# multiplications precede additions  
+# the ** operator uses right-sided binding
 # Which of the following variable names are illegal? TRUE and True true  
-#                                                      .            . 
-print(2+3*5.)
