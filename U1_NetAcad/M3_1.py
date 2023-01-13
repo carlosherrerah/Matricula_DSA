@@ -1,5 +1,4 @@
 # Making decisions in Python
-
 import array as arr
 
 a = 1 == 1.
@@ -7,7 +6,6 @@ print(a)
 
 a = 0
 print(a != 0)
-
 # n = int(input("Numero: "))
 # print(n >= 100)
 
@@ -35,7 +33,7 @@ else:
 print("Take a rest") 
 
 print("\n--> 3")
-age = 10
+age = 20
 if the_weather_is_good:
     if age > 18:
         print("drink a beer")
@@ -47,7 +45,9 @@ print("Take a rest")
 
 print("\n--> 4")
 sex = "H"
+age = 10
 the_weather_is_good = None
+
 if the_weather_is_good:
     print("go_for_a_walk")
 elif age > 18:

@@ -2,7 +2,7 @@
 # section 6 Interaction with the user
 import os
 import time
-
+'''
 print("What is your last name")
 lastName = input()
 
@@ -24,18 +24,19 @@ time.sleep(2)
 print("+" + 10 * "-" + "+")
 print(("|" + " " * 10 + "|\n") * 5, end="")
 print("+" + 10 * "-" + "+")
-
+'''
 
 leg_a = float(input("Input first leg length: "))
 leg_b = float(input("Input second leg length: "))
 leg_c = (leg_a**2 + leg_b**2) ** .5
 
+print(leg_c)
 print(round(leg_c,4))
 print("%.3f" % leg_c)
 print(f'{leg_c:.2f}')
 
 print(f'{1000000:,.2f}')   # separados por comas
-print(f'{1:0<6d}')      # right padding with 0
+print(f'{123:0<6d}')       # right padding with 0
 
 print("Hypotenuse length is " + str(leg_c))    # casting  str()
 
@@ -62,7 +63,7 @@ tot_min = mins + dura
 add_hor = tot_min // 60
 res_min = tot_min %  60
 
-tot_hor = (hour + add_hor) 
+tot_hor = hour + add_hor 
 res_hor = tot_hor % 24 
 print(res_hor,":", res_min)
 
