@@ -29,11 +29,12 @@ print("+" + 10 * "-" + "+")
 leg_a = float(input("Input first leg length: "))
 leg_b = float(input("Input second leg length: "))
 leg_c = (leg_a**2 + leg_b**2) ** .5
+
 print(round(leg_c,4))
 print("%.3f" % leg_c)
 print(f'{leg_c:.2f}')
 
-print(f'{1000000:,}')   # separados por comas
+print(f'{1000000:,.2f}')   # separados por comas
 print(f'{1:0<6d}')      # right padding with 0
 
 print("Hypotenuse length is " + str(leg_c))    # casting  str()
