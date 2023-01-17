@@ -1,7 +1,6 @@
 # Loop 
 # An infinite loop = endless loop    Ctrl C = Break
 
-''' -->1
 even_numbers = 0   # Par
 odd_numbers = 0    # Impar
 
@@ -21,7 +20,6 @@ while counter:
     print("Inside the loop.", counter)
     counter += 1
 print("Outside the loop.", counter)
-1<-- '''
 
 '''
 while True:
@@ -41,7 +39,7 @@ print(
 +================================+
 """)
 
-'''
+
 # range() function accepts only integers as its arguments
 for i in range(10): # 0..9  range(1,11)=1..10  range(2,8,3)=
     pass
@@ -80,8 +78,9 @@ while i <= 3:
     print(i)
     i += 1
 print("sino: ", i)
-'''
+
 # Sumatoria, No de bloques
+# --------------------------------------------------------------
 blocks = int(input("Enter the number of blocks: "))
 suma=0
 height=1
@@ -99,7 +98,7 @@ Collatz's hypothesis
 4. if c0 ≠ 1, go back to point 2.
 '''
 
-'''
+
 c0=16
 steps = 0
 while c0 != 1:
@@ -110,7 +109,8 @@ while c0 != 1:
     print(c0)
     steps+=1
 print("steps:", steps)
-'''
+
+
 # SECTION SUMMARY
 for digit in "0165031806510":
     if digit == "0":
