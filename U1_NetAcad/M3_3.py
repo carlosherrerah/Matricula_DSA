@@ -8,9 +8,9 @@
 
 # Bitwise operators
 # & (ampersand) ‒ bitwise conjunction;
-# | (bar) ‒ bitwise disjunction;
-# ~ (tilde) ‒ bitwise negation;
-# ^ (caret) ‒ bitwise exclusive or (xor).
+# | (bar)       ‒ bitwise disjunction;
+# ~ (tilde)     ‒ bitwise negation;
+# ^ (caret)     ‒ bitwise exclusive or (xor).
 
 i = 32
 j = 22
