@@ -12,7 +12,7 @@
 # ~ (tilde)     ‒ bitwise negation;
 # ^ (caret)     ‒ bitwise exclusive or (xor).
 
-i = 32
+i = 34
 j = 22
 bit = i & j
 print(bit)

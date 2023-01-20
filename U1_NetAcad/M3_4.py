@@ -1,5 +1,7 @@
 # Lists
 # our list is a collection of elements, but each element is a scalar
+
+# c:\> pip install numpy
 import numpy as np
 
 numbers = [10, 5, 7, 9, 2, 8]
@@ -33,6 +35,7 @@ numbers.append(13)
 # insert at any place int the list
 numbers.insert(3,33)  # position, value
 
+print("--->", numbers)
 # Function
 # result = function(arg)
 r = len("hello")

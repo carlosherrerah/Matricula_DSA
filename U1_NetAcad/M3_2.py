@@ -45,9 +45,11 @@ for i in range(10): # 0..9  range(1,11)=1..10  range(2,8,3)=
     pass
     # continue
     print(i)
-    # break
+    break
+    print("hola")
 print("Fin")
- 
+
+
 # Example: word without vowels
 user_word = input("Gime a Word: ")
 user_word = user_word.upper()
@@ -90,6 +92,7 @@ while suma <= blocks:
 height-=2
 print("The height of the pyramid:", height)
 
+
 '''
 Collatz's hypothesis
 1. take any non-negative and non-zero integer number and name it c0;
@@ -97,7 +100,6 @@ Collatz's hypothesis
 3. otherwise, if it's odd, evaluate a new c0 as 3 × c0 + 1;
 4. if c0 ≠ 1, go back to point 2.
 '''
-
 
 c0=16
 steps = 0
@@ -117,7 +119,8 @@ for digit in "0165031806510":
         print("X", end="")
         continue
     print(digit,end="")
-    
+
+ 
  
 
 
