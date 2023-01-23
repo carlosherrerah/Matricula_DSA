@@ -5,7 +5,9 @@
 import numpy as np
 
 numbers = [10, 5, 7, 9, 2, 8]
-# print(numbers.sort())
+# numbers.sort()
+ordenado = sorted(numbers)
+print(ordenado)
 
 for i in range(0, len(numbers)):   # length
     print(numbers[i], end="\t")
@@ -66,6 +68,9 @@ b = 6
 a, b = b, a
 print(a,b)
 
+list.remove()
+ 
+# ramirez, gutierrez, Quinones
 # Without using reverse.
 length = len(my_list)
 for i in range(length // 2):
@@ -80,7 +85,6 @@ my_list = [1, 'a', ["list", 64, [11, 22], False]]
 print(my_list[2][2])
 print(my_list[2][2][1])
 del my_list
-
 
 nombre = "Universidad Politecnica"
 print(nombre[6:10])
