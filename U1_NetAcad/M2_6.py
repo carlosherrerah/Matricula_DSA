@@ -2,7 +2,7 @@
 # section 6 Interaction with the user
 import os
 import time
-'''
+
 print("What is your last name")
 lastName = input()
 
@@ -24,7 +24,6 @@ time.sleep(2)
 print("+" + 10 * "-" + "+")
 print(("|" + " " * 10 + "|\n") * 5, end="")
 print("+" + 10 * "-" + "+")
-'''
 
 leg_a = float(input("Input first leg length: "))
 leg_b = float(input("Input second leg length: "))
