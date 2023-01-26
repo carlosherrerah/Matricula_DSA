@@ -2,7 +2,6 @@
 import numpy as np
 
 squares = [x ** 2 for x in range(10) if x**2 % 2 ==0]
-
 print(squares)
 
 board = []
@@ -11,7 +10,7 @@ board = []
 for i in range(8):
     row = ["A" for i in range(8)]
     board.append(row)
-# print(board)    
+print(board)    
 
 a = np.array([7,2,4])
 b = np.array([[1, 2, 3, 6],
@@ -26,9 +25,9 @@ print(c[1][2][3])
 print(b.shape)
 print(b.shape[0])
 print(b[2,1])
-print(np.where(a > 3))
+print("np.where", np.where(a > 3))
 
-board1 = [[i+j for i in range(3)] for j in range(7)]  # 7 X 3
+board1 = [[i+j for j in range(3)] for i in range(7)]  # 7 X 3
 board2 = np.array(board1)
 print("F, C", board2.shape)
 print("Len ", len(board2))

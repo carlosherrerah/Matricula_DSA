@@ -14,7 +14,7 @@ list_2 = list_1
 
 print(list_2)
 list_1[0]=10
-print(list_2)
+print("-->", list_2)
 # the name of an ordinary variable is the name of its content;
 # the name of a list is the name of a memory location where the list is stored.
 
