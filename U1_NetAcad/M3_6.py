@@ -32,6 +32,16 @@ print(list_1[1:-1])           # [  : end)
 print(list_1[1:])             # [1 : end]
 print(list_1[:3])             # [0 :   3)
 
+a = 0 ^ 1
+print(a)
+
+nums = [1,2,3]
+vals = nums[-1:-2]
+print(vals)
+
+my_list = [[0, 1, 2, 3] for i in range(2)]
+print(my_list)
+
 del list_1[1:3]
 del list_1[:]
 del list_1

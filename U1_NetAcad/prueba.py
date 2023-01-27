@@ -2,16 +2,11 @@
 01biseccion.py
 02SecretNumber.py
 03Tickets.py
+04BubbleSort.py
 '''
 
-lista = [4,7,1]
-y=list(map(lambda x:x+3,lista))
-print(y)
-
-mayores = list(filter(lambda x: x>2, lista))
-print(mayores)
-
-ordenada = sorted(lista)
-print(ordenada)
-
-
+for i in range(1):
+    print("#")
+else:
+    print("#")
+ 
