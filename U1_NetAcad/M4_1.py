@@ -27,7 +27,7 @@ y=list(map(lambda x:x+3,lista))
 print(y)
 
 mayores = list(filter(lambda x: x>2, lista))
-print(mayores)
+print("Mayores:" , mayores)
 
 # Operador Ternario
 # [código si se cumple] if [condición] else [código si no se cumple]
