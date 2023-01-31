@@ -2,7 +2,7 @@
 # None = Null
 
 import numpy as np
-# print(None + 2)
+print(None + 2)
 a = None
 b = True if a==None else False
 print(b)

@@ -1,4 +1,4 @@
-# Section 6 – Tuples and dictionaries
+# Section 6 – Tuples() and dictionaries {}
 # Los datos mutables pueden ser actualizados libremente en cualquier momento
 # Una tupla () solo puede ser asignada y leída : inmutable
 # cada elemento de una tupla puede ser de distinto tipo
@@ -152,6 +152,18 @@ i = [x for x in c if any (y<9 for y in c[x].values())]
 print(i)
 # ['CheapCompany', 'SosoCompany']
 
+## Data
+cols = ['name', 'salary', 'job']
+db = [('Alice', 180000, 'scientist'),
+      ('Bob', 99000, 'manager'),
+      ('Frank', 87000, 'CEO')]
+
+## One-Liner
+db = [dict(zip(cols, row)) for row in db]
+
+## Result
+print()
+print(db)
 
 
 
