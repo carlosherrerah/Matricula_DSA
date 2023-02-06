@@ -68,7 +68,7 @@ b = 6
 a, b = b, a
 print(a,b)
 
-list.remove()
+# list.remove()
  
 # ramirez, gutierrez, Quinones
 # Without using reverse.
@@ -86,7 +86,8 @@ print(my_list[2][2])
 print(my_list[2][2][1])
 del my_list
 
-nombre = "Universidad Politecnica"
+nombre = "  Universidad Politecnica    "
+nombre = nombre.strip()   # trim
 print(nombre[6:10])
 x = nombre.split()
 print(x[1])
