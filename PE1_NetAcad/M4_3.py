@@ -2,7 +2,7 @@
 # None = Null
 
 import numpy as np
-print(None + 2)
+# print(None + 2)
 a = None
 b = True if a==None else False
 print(b)
@@ -25,15 +25,19 @@ def isLeap(year):
 
 def days_in_month(year, month):
     dias=[31,28,31,30,31,30,31,31,30,31,30,31]
+    suma = 0
+    for i in range(12):
+        suma = suma + dias[i]
     suma = np.sum(dias[0:month-1])           
     total = suma+1 if isLeap(year) else suma
     return suma
 
 def day_of_year(year, month, day):
+    
     total = days_in_month(year, month)+day
     return total
 
-print(day_of_year(2000,1,2))
+print(day_of_year(2000,2,2))
 
 # A natural number is prime if it is greater than 1 and 
 # has no divisors other than 1 and itself.
