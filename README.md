@@ -1,5 +1,5 @@
 # Matricula_DSA
 ---
 >Y = <br>
-![Alt Quebrado](U1_NetAcad/img/Ecuacion.png "Matematicas") 
+![Alt Quebrado](PE1_NetAcad/img/Ecuacion.png "Matematicas") 
 ## Solucion:
