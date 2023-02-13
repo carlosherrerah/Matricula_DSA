@@ -61,5 +61,5 @@ val_mi_id = ctypes.cast(id(C), ctypes.py_object).value
 print(val_mi_id[0][1])
 print(val_mi_id)
 
-
+print(f"{val_mi_id = }")
 
