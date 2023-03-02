@@ -156,5 +156,8 @@ elif victor == 'me':
 else:
 	print("Tie!")
         
+r = math.pow(25,0.5) 
+
+print(r)       
 print(". . . Hecho")
 
