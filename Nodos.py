@@ -1,6 +1,3 @@
-import os
-from ADT import Stacks
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -8,20 +5,34 @@ class Node:
 
     def getData(self):
         return self.data
+    
+    def setData(self, dato):
+        self.data= dato
 
-    def setData(self, data):
-        self.data = data
-
-nodo1 = Node("jesus")
+nodo1 = Node("Jesus")
 print(nodo1.data)
 print(nodo1.getData()) 
-print(nodo1.next)   
+print(nodo1.next)  
 
 nodo1.setData("Maria")
 print(nodo1.getData()) 
+print(nodo1.data) 
+
 nodo2 = Node("JOSE")
 nodo1.next= nodo2
+
+nodo3 = Node("Jesus")
+nodo2.next = nodo3
+
+print("----->")
 print(nodo1.data)
 print(nodo1.next.data)
+print(nodo1.next.next.data)
+print(nodo1.next.next.next)
 
-Stacks.saludo()
+print(nodo1.next.next.next.data)
+
+
+
+    
+    
