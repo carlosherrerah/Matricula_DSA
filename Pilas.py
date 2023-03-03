@@ -6,6 +6,9 @@ class Node:
     def getData(self):
         return self.data
 
+# LIFO = Last Input First Output
+# UEPS = Ultima en Entrar Primera en Salir
+
 class Stack:
     def __init__(self):
         self.head = None
@@ -24,11 +27,40 @@ class Stack:
         newNode.next = self.head
         self.head = newNode
         self.size+=1
+
+    def pop(self):
+        data = None
+        if not self.isEmpty(): 
+            data = self.head.data
+            self.head = self.head.next
+            self.size-=1
+        return data
+    
+    
+    
+
+
+
+'''        
       1       2     3 
     jesus, maria, jose
     jose=  pop()
+'''
+p1 = Stack()
 
-    pop 
-    push
-    show
-    content
+p1.peak()
+p1.push("Jesus")
+p1.push("Maria")
+p1.push("Jose")
+
+print("Sacar-->")
+#print(p1.pop())
+#print(p1.pop())
+#print(p1.pop()) 
+#print(p1.pop()) 
+
+p1.peak()
+
+
+
+
