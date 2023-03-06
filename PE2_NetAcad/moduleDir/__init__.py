@@ -2,5 +2,7 @@
 # __all__ = ['equalizer', 'vocoder', 'karaoke']
 # from ..filters import equalizer
 
-print("Hola")
+print("Welcome to Modules")
+print(__name__)
+
 

@@ -1,4 +1,6 @@
-print("Bienvenido al Modulo")
+#!/usr/bin/env python3
+
+print("Welcome to ModuleDir/modulePrg")
 print(__name__)
 
 __counter = 0

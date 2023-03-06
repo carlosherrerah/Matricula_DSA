@@ -28,14 +28,17 @@ print(log(e, e) == exp(0))
 
 print(math.hypot(3,4))
 
+print("randrange: ")
 for i in range(5):
     print(randrange(10,20), end="\t")    # [ )
 print()    
 
+print("randint: ")
 for i in range(0,5):
     print(randint(10,20), end="\t")      # [ ]
 print()    
 
+print("random: ")
 for i in range(0,5,1):
     print(random(), end="\t")
 print()
@@ -73,3 +76,18 @@ print("Sin Duplicados", unicos)
 print(random.sample("ABCDEFGH", 4))
 
 # 2.5
+import platform 
+from platform import platform, machine, processor, system, version, python_implementation, python_version_tuple
+print(platform())
+print(platform(1))
+print(platform(0, 1))
+print(machine())
+print(processor())
+print("S.O. ", system())
+print("Version Windows: ", version())
+print(python_implementation())
+print(python_version_tuple())
+
+# https://docs.python.org/3/py-modindex.html
+import os
+print(dir(os))

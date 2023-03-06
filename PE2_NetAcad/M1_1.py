@@ -2,7 +2,7 @@
 # https://docs.python.org/3/tutorial/modules.html
 # https://docs.python.org/3/library/index.html
 
-# Cada módulo consta de entidades
+# Cada módulo(Programa) consta de entidades
 # Estas entidades pueden ser funciones, variables, constantes, clases y objetos.
 # namespace: es un espacio, donde no hay dos objetos con el mismo nombre
 
