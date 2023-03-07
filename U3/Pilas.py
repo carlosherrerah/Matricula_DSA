@@ -31,15 +31,12 @@ class Stack:
     def pop(self):
         data = None
         if not self.isEmpty(): 
+            old  = self.head
             data = self.head.data
             self.head = self.head.next
             self.size-=1
+            del old
         return data
-    
-    
-    
-
-
 
 '''        
       1       2     3 
@@ -48,18 +45,18 @@ class Stack:
 '''
 p1 = Stack()
 
-p1.peak()
 p1.push("Jesus")
 p1.push("Maria")
 p1.push("Jose")
 
 print("Sacar-->")
-#print(p1.pop())
-#print(p1.pop())
-#print(p1.pop()) 
-#print(p1.pop()) 
+print(p1.pop())
+print(p1.pop())
+print(p1.pop()) 
+print(p1.pop()) 
 
-p1.peak()
+#p1.peak()
+
 
 
 
