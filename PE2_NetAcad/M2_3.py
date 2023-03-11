@@ -23,7 +23,7 @@ isspace(): ¿La cadena consta solo de espacios en blanco?
 isupper(): ¿La cadena consta solo de letras mayúsculas?
 startswith(): ¿La cadena consta solo de letras mayúsculas?
 '''
-
+'''
 print('aBcD'.capitalize())
 print(' aBcD'.capitalize())
 print('[' + 'hola'.center(11) + ']')
@@ -52,14 +52,16 @@ while (pos != -1):
     print(pos)
     pos = the_text.find('the', pos+1)
 
-print('lambda30'.isalnum())
+print("\nisalnum") # No spaces, No guion bajo, No Vacios
+print('lambda_30'.isalnum())
 print('lambda 30'.isalnum())
 print(''.isalnum())
 print('20E1'.isalnum())
 
+print('\nisalpha')
 print('Mu40'.isalpha())
 print("Year2019".isdigit())
-print("3.1416".isdigit())
+print("3.1416".isdigit())   # No punto
 print("Moooo".islower())
 print(' \n '.isspace())
 print("Moooo".isupper())
@@ -89,8 +91,50 @@ print("Hello World".swapcase()) # upper to lower and vs
 print("hello world".title())    
 print("Hello World".upper())    
 print("Hello World".count("lo")) # cuenta las ocurrencias 
+'''
+# LAB
+def mysplit(strng):
+    # devolver [] si la cadena está vacía o solo contiene espacios en blanco
+    if strng == '' or strng.isspace():
+        return [ ]
+    # preparar una lista a devolver
+    lst = []
+    # preparar una palabra para construir palabras subsecuentes
+    word = ''
+    # verificar si actualmente estamos dentro de una palabra (es decir, si la cadena comienza con una palabra)
+    inword = not strng[0].isspace()
+    # iterar a través de todos los caracteres en cadena
+    for x in strng:
+        # si actualmente estamos dentro de una cadena...
+        if inword:
+            # ... y el carácter actual no es un espacio...
+            if not x.isspace():
+                # ... actualizar palabra actual
+                word = word + x
+            else:
+                # ... de lo contrario, llegamos al final de la palabra, por lo que debemos agregarla a la lista...
+                lst.append(word)
+                # ... y señalar que estamos ahora fuera de la palabra
+                inword = False
+        else:
+            # si estamos fuera de la palabra y llegamos a un carácter no que no es un espacio en blanco...
+            if not x.isspace():
+                # ... significa que ha comenzado una nueva palabra, por lo que debemos recordarla y...
+                inword = True
+                # ... almacenar la primera letra de la nueva palabra
+                word = x
+            else:
+                pass
+    # si hemos dejado la cadena y hay una cadena no vacía en la variable word, necesitamos actualizar la lista
+    if inword:
+        lst.append(word)
+    # devolver la lista al invocador
+    return lst
 
-# Cuestionario
 
-
+print(mysplit("Ser o no ser, esa es la cuestión"))
+print(mysplit("Ser o no ser, esa es la cuestión"))
+print(mysplit("   "))
+print(mysplit(" abc "))
+print(mysplit(""))
 
