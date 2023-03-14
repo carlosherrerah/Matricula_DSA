@@ -16,7 +16,7 @@ Seccion 2. La naturaleza de las cadenas en Python
 Seccion 3. Metodos de cadenas
 Seccion 4. Cadenas en accion
 Seccion 5. Cuatro programas simples
-Seccion 5. Errores: el pan diario del programador
+Seccion 6. Errores: el pan diario del programador
 Seccion 7. La anatomia de las Excepciones
 Seccion 8. Prueba del Modulo
 

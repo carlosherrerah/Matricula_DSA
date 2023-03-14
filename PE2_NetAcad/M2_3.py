@@ -23,7 +23,7 @@ isspace(): ¿La cadena consta solo de espacios en blanco?
 isupper(): ¿La cadena consta solo de letras mayúsculas?
 startswith(): ¿La cadena consta solo de letras mayúsculas?
 '''
-'''
+
 print('aBcD'.capitalize())
 print(' aBcD'.capitalize())
 print('[' + 'hola'.center(11) + ']')
@@ -91,7 +91,8 @@ print("Hello World".swapcase()) # upper to lower and vs
 print("hello world".title())    
 print("Hello World".upper())    
 print("Hello World".count("lo")) # cuenta las ocurrencias 
-'''
+
+#------------------------------------------------------------------------------
 # LAB
 def mysplit(strng):
     # devolver [] si la cadena está vacía o solo contiene espacios en blanco

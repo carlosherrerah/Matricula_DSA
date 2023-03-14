@@ -154,7 +154,7 @@ else:
             suma =suma + int(x)
         date = str(suma)        
 print(date)
-'''
+
 # -----------------------------------------------------------------------------
 # LAB   ¡Encuentra una palabra!
 word = 'dog'
@@ -182,13 +182,60 @@ for ch in word:
 
 print(word  == texto)
 print(found)
-
+'''
 # -----------------------------------------------------------------------------
 # LAB   sudoku
-A = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
-sum(A)
+# https://en.wikipedia.org/wiki/Sudoku
+import numpy as np
+A = [[2, 9, 5, 7, 4, 3, 8, 6, 1],
+     [4, 3, 1, 8, 6, 5, 9, 2, 7],
+     [8, 7, 6, 1, 9, 2, 5, 4, 3],
+     [3, 8, 7, 4, 5, 9, 2, 1, 6],
+     [6, 1, 2, 3, 8, 7, 4, 9, 5],
+     [5, 4, 9, 2, 1, 6, 7, 3, 8],
+     [7, 6, 3, 5, 2, 4, 1, 8, 9],
+     [9, 2, 8, 6, 7, 1, 3, 5, 4],
+     [1, 5, 4, 9, 3, 8, 6, 7, 2]]
+
+A = [[1, 9, 5, 7, 4, 3, 8, 6, 2],
+     [4, 3, 1, 8, 6, 5, 9, 2, 7],
+     [8, 7, 6, 1, 9, 2, 5, 4, 3],
+     [3, 8, 7, 4, 5, 9, 2, 1, 6],
+     [6, 1, 2, 3, 8, 7, 4, 9, 5],
+     [5, 4, 9, 2, 1, 6, 7, 3, 8],
+     [7, 6, 3, 5, 2, 4, 1, 8, 9],
+     [9, 2, 8, 6, 7, 1, 3, 5, 4],
+     [2, 5, 4, 9, 3, 8, 6, 7, 1]]
+
+for r in range(0, 9, 3):
+    for c in range(0, 9, 3):
+        a=[]
+        for i in range(3):
+            for j in range(3):
+                a.append(A[r+i][c+j])
+        print(r,c, sum(a))
+
+# Generar la secuencia de numeros
+a = [chr(i+48) for i in range(1, 10)]
+a = [chr(ord('0')+i) for i in range(1, 10)]
+
+r = '195743862'
+r = sorted(list(r))
+print(a == r)
 
 
+'''
+A = np.array(A)
+r = np.sum(A[:])
+print(r)
 
+B = A.T
+r = np.sum(B[:])
+print(r)
 
+# print("Hello World".count("lo")) # cuenta las ocurrencias
 
+r1 = '295743861'
+l1 = list(r1)
+print(l1)
+'''
