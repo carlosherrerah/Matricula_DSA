@@ -21,9 +21,9 @@ ncartas = ncaras * npalos
 print(ncartas)
 
 mazo = []
-mazo.insert(0, Carta(1, "C") )
-mazo.append(Carta(2, "B"))
-print(mazo[1])
+#mazo.insert(0, Carta(1, "C") )
+#mazo.append(Carta(2, "B"))
+#print(mazo[1])
 
 mazos = []
 mazos.append([])
@@ -32,3 +32,10 @@ print(mazos[0][0])
 
 masos= np.zeros((3,40),dtype = Carta)
 masos[1][39]= Carta(12, "B")
+
+for i in range(ncartas+1):
+    palo = i %   npalos
+    cara = i %   ncaras
+
+    mazo.append(Carta(caras[cara], palos[palo]))
+    print(mazo[i])
