@@ -10,26 +10,17 @@ tablero = [['1','2','3'],
            ['Fin','','']]
 
 def pantalla():
-    Boton1 = Button(ventana, width=9, height=3,  command=lambda: comenzar(1))
-    Boton2 = Button(ventana, width=9, height=3,  command=lambda: comenzar(2))
-    Boton3 = Button(ventana, width=9, height=3,  command=lambda: comenzar(3))
-    Boton4 = Button(ventana, width=9, height=3,  command=lambda: comenzar(4))
-    Boton5 = Button(ventana, width=9, height=3,  command=lambda: comenzar(5))
-    Boton6 = Button(ventana, width=9, height=3,  command=lambda: comenzar(6))
-    Boton7 = Button(ventana, width=9, height=3,  command=lambda: comenzar(7))
-    Boton8 = Button(ventana, width=9, height=3,  command=lambda: comenzar(8))
-    Boton9 = Button(ventana, width=9, height=3,  command=lambda: comenzar(9))
-    BotonF = Button(ventana, width=9, height=3,  command=lambda: finalizar())
+    Botones.append(Button(ventana, width=9, height=3,  command=lambda: comenzar(1)))
+    Botones.append(Button(ventana, width=9, height=3,  command=lambda: comenzar(2)))
+    Botones.append(Button(ventana, width=9, height=3,  command=lambda: comenzar(3)))
+    Botones.append(Button(ventana, width=9, height=3,  command=lambda: comenzar(4)))
+    Botones.append(Button(ventana, width=9, height=3,  command=lambda: comenzar(5)))
+    Botones.append(Button(ventana, width=9, height=3,  command=lambda: comenzar(6)))
+    Botones.append(Button(ventana, width=9, height=3,  command=lambda: comenzar(7)))
+    Botones.append(Button(ventana, width=9, height=3,  command=lambda: comenzar(8)))
+    Botones.append(Button(ventana, width=9, height=3,  command=lambda: comenzar(9)))
 
-    Botones.append(Boton1)
-    Botones.append(Boton2)
-    Botones.append(Boton3)
-    Botones.append(Boton4)
-    Botones.append(Boton5)
-    Botones.append(Boton6)
-    Botones.append(Boton7)
-    Botones.append(Boton8)
-    Botones.append(Boton9)
+    BotonF = Button(ventana, width=9, height=3,  command=lambda: finalizar())
     Botones.append(BotonF)
 
     for i in range(10):
