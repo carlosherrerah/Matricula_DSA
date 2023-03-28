@@ -6,7 +6,7 @@
 # Objeto: Tiene propiedades o atributos
 # Objeto: Realiza actividades denominada metodos
 
-# Una clase es un conjunto de objetos.
+# Una clase es un conjunto de objetos. Una clase es una idea
 # Un objeto es un ser perteneciente a una clase.
 
 # un objeto que pertenece a una clase específica pertenece a todas las superclases al mismo tiempo
@@ -16,6 +16,7 @@
 #                   que cualquiera de sus subclases.
 
 # 1.5 Herencia
+# Cuando una clase se deriva de otra clase, su relación se denomina herencia
 # Un  objeto tiene: un nombre(sustantivo), propiedades(adjetivos) y metodos(verbos).
 
 # Un Cadillac rosa pasó rápidamente.
@@ -24,7 +25,16 @@
 # Propiedad = Color (rosa)
 # Actividad = Pasar (rápidamente)
 
-# 1.7
+# El acto de crear un objeto de la clase seleccionada también se llama instanciación
+
+class Node:
+    pass
+
+nodo = Node()
+
+
+
+
 
 
 
