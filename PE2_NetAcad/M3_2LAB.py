@@ -106,14 +106,14 @@ class Queue:
     def getLen(self):
         return len(self.queue)        
 
-class SuperQueue(Queue):
+class subQueue(Queue):
     # Escribe código nuevo aquí.
     def isempty(self):
         #return len(self.queue) == 0
         return self.getLen() == 0
     
 
-que = SuperQueue()
+que = subQueue()
 que.put(1)
 que.put("perro")
 que.put(False)
