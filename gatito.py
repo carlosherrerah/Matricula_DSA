@@ -36,9 +36,9 @@ def pantalla():
 def comenzar(i):
     f = (i-1) // 3
     c = (i-1)  % 3
-    print(i, f , c, tablero[f][c])
     tablero[f][c]= '.' + tablero[f][c] + '.'
     Botones[i-1].config(text=tablero[f][c])
+    print(i, f , c, tablero[f][c])
 
 def finalizar():
     print(". . . H e c h o")
