@@ -30,10 +30,10 @@ class Timer:
         self.ss+=1
         if self.ss >= 60:
             self.ss = 0
-            self.mm+=1
+            self.mm += 1
             if self.mm >= 60:
                 self.mm= 0
-                self.hh+=1
+                self.hh += 1
                 if self.hh >= 24:
                     self.hh = 0
                     self.ss=0
@@ -43,10 +43,10 @@ class Timer:
         self.ss-=1
         if self.ss <= -1:
             self.ss = 59
-            self.mm-=1
+            self.mm -= 1
             if self.mm <= -1: 
-                self.mm= 59
-                self.hh-=1
+                self.mm = 59
+                self.hh -= 1
                 if self.hh <= -1:
                     self.hh = 23
      
@@ -125,7 +125,7 @@ except WeekDayError:
 
 #------------------------------------------------------------------------------
 # LAB Puntos en un plano
-'''
+
 # {\displaystyle d={\sqrt {(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}}.}
 # {\displaystyle (x',y')=((x\cos \theta -y\sin \theta \,),(x\sin \theta +y\cos \theta \,)).}                
 
@@ -151,13 +151,13 @@ class Point:
     def distance_from_xy(self, x, y):
         # Escribir código aquí
         return math.hypot(self.getx() - x , self.y - y)
-    
 
     def distance_from_point(self, point):
         # Escribir código aquí
         return self.distance_from_xy(point.getx(), point.gety())
         #return math.hypot(self.getx() - point.x , self.y - point.y)
 
+'''
 point1 = Point(0, 0)
 point2 = Point(1, 1)
 print(point1.distance_from_point(point2))
@@ -167,6 +167,27 @@ print(point2.distance_from_xy(2, 0))
 #------------------------------------------------------------------------------
 # LAB Triangulo
 
+'''
+import math
+class Point:
+    # El código del lab anterior.
+    pass
+'''
+class Triangle:
+    def __init__(self, vertice1, vertice2, vertice3):
+        # Escribir código aquí
+        self.v= [vertice1, vertice2, vertice3]
 
+    def perimeter(self):
+        # Escribir código aquí
+        perimetro = self.v[0].distance_from_point(self.v[1]) + \
+                    self.v[0].distance_from_point(self.v[2]) + \
+                    self.v[1].distance_from_point(self.v[2])
+        perimetro = 0
+        for i in range(3):
+            perimetro += self.v[i].distance_from_point(self.v[(i+1) % 3 ])
+        return perimetro
 
+triangle = Triangle(Point(0, 0), Point(1, 0), Point(0, 1))
+print(triangle.perimeter())
 

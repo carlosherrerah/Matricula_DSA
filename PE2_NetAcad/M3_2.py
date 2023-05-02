@@ -59,10 +59,11 @@ print(stack1.pop())
 
 # invocar cualquier método (incluidos los constructores) desde fuera de la clase nunca requiere colocar el argumento self en la lista de argumentos, 
 # invocar un método desde dentro de la clase exige el uso explícito del argumento self, y tiene que ser el primero en la lista.
-class AddingStack(Stack):     # Extend o Herencia
+class AddingStack(Stack):       # Extend o Herencia
     def __init__(self):
-        Stack.__init__(self)  # Python te obliga a invocar explícitamente el constructor de una superclase.
-        self.__sum = 0        # private
+        #Stack.__init__(self)   # Python te obliga a invocar explícitamente el constructor de una superclase.
+        super().__init__()      # accede a la superclase sin necesidad de conocer su nombre
+        self.__sum = 0          # private
 
     def push(self, val):
         self.__sum += val
