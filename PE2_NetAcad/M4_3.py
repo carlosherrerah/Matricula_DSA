@@ -1,7 +1,7 @@
 # Seccion 3. Archivos reales
 #stream = open("/Users/carlo/Desktop/File.txt", 'rt', encoding='utf-8')
 
-'''
+# '''
 # Lectura caracter por caracter
 stream = open("Text.txt", 'rt', encoding='utf-8') 
 from os import strerror
@@ -107,7 +107,7 @@ except IOError as e:
 # enviar un mensaje de tipo cadena a stderr
 import sys
 sys.stderr.write("Mensaje de Error")
-'''
+
 
 #------------------------------------------------------------------------------
 # Archivos binarios
@@ -184,7 +184,39 @@ try:
 
 except IOError as e:
     print("Se produjo un error de E/S:", strerror(e.errno))
-
+# '''
 #------------------------------------------------------------------------------
 # 4.3.7 Copiando archivos:
+from os import strerror
 
+srcname = input("Ingresa el nombre del archivo fuente: ")
+try:
+    src = open(srcname, 'rb')
+except IOError as e:
+    print("No se puede abrir archivo fuente: ", strerror(e.errno))
+    exit(e.errno)   # cual valor != 0 es Error	
+
+dstname = input("Ingresa el nombre del archivo destino: ")
+try:
+    dst = open(dstname, 'wb')
+except Exception as e:
+    print("No se puede crear el archivo de destino: ", strerror(e.errno))
+    src.close()
+    exit(e.errno)	
+
+buffer = bytearray(65536)   # 2^16
+total  = 0
+try:
+    readin = src.readinto(buffer)
+    while readin > 0:
+        written = dst.write(buffer[:readin])
+        total += written
+        readin = src.readinto(buffer)
+except IOError as e:
+    print("No se puede crear el archivo de destino: ", strerror(e.errno))
+    exit(e.errno)	
+    
+print(total,'byte(s) escritos con éxito')
+src.close()
+dst.close()
+    
