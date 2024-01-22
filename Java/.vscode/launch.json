@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "E04TestArreglos",
+            "request": "launch",
+            "mainClass": "u1.E04TestArreglos",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
             "name": "Arreglos",
             "request": "launch",
             "mainClass": "functions.Arreglos",

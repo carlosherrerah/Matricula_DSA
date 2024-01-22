@@ -16,7 +16,7 @@ public class Arreglos {
         System.out.println();
     }
 
-    public static <T> void imprimirArreglo(T[] v) {
+    public static <T> void imprimirArregloT(T[] v) {
         for (T i : v) {
             System.out.print(i + "\t");
         }
