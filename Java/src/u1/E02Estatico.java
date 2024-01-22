@@ -1,4 +1,5 @@
-public class Prueba {
+package u1;
+public class E02Estatico {
 
     static int doble(int a) {
         return a * 2;
@@ -10,11 +11,11 @@ public class Prueba {
 
     public static void main(String[] args) {
         System.out.println("hola mundo");
-        int r = Prueba.doble(3);
+        int r = E02Estatico.doble(3);
         System.out.println(r);
 
-        Prueba a = new Prueba();
-        Prueba b = new Prueba();
+        E02Estatico a = new E02Estatico();
+        E02Estatico b = new E02Estatico();
 
         System.out.println(a.duplicado(4));
         doble(5);

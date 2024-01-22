@@ -1,5 +1,2 @@
 # Matricula_DSA
----
->Y = <br>
-![Alt Quebrado](PE1_NetAcad/img/Ecuacion.png "Matematicas") 
-## Solucion:
+## 2024-1 Java 

@@ -1,0 +1,91 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Arreglos",
+            "request": "launch",
+            "mainClass": "functions.Arreglos",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Matematicas",
+            "request": "launch",
+            "mainClass": "functions.Matematicas",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "TestMaestro",
+            "request": "launch",
+            "mainClass": "u1.TestMaestro",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Matematicas",
+            "request": "launch",
+            "mainClass": "Functions.Matematicas",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Arreglos",
+            "request": "launch",
+            "mainClass": "Functions.Arreglos",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "E03SeekArray",
+            "request": "launch",
+            "mainClass": "u1.E03SeekArray",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Operaciones",
+            "request": "launch",
+            "mainClass": "Operaciones",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Prueba",
+            "request": "launch",
+            "mainClass": "Prueba",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "SeekArray",
+            "request": "launch",
+            "mainClass": "SeekArray",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "E01Argumentos",
+            "request": "launch",
+            "mainClass": "u1.E01Argumentos",
+            "projectName": "Java_6f86a772"
+        }
+    ]
+}
