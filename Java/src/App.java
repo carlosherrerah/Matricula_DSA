@@ -4,7 +4,7 @@ import functions.Arreglos;
 public class App {
 
     public static void main(String[] args) {
-        Integer[] tabla = { 5, 6 };
+        int[] tabla = { 5, 6 };
 
         System.out.println("Hello, World!");
         //E01Argumentos.main(tabla);

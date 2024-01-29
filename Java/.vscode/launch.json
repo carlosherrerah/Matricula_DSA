@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MazoV",
+            "request": "launch",
+            "mainClass": "MazoV",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "MazoE",
+            "request": "launch",
+            "mainClass": "MazoE",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Maestro",
+            "request": "launch",
+            "mainClass": "u1.Maestro",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Mazo",
+            "request": "launch",
+            "mainClass": "Mazo",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Persona",
+            "request": "launch",
+            "mainClass": "u1.Persona",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Cartas",
+            "request": "launch",
+            "mainClass": "u1.Cartas",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "MazoDeCartas",
+            "request": "launch",
+            "mainClass": "u1.MazoDeCartas",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
             "name": "E04TestArreglos",
             "request": "launch",
             "mainClass": "u1.E04TestArreglos",

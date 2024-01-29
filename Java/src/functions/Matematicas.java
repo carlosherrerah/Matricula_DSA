@@ -4,20 +4,20 @@ public class Matematicas {
 
     public static int factorial(int n) {
         int total = 1;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i < n; i++) {
             total = total * i;
         }
         return total;
     }
 
     public static int max(int a, int b) {
-        int mayor = (a > b) ? a : b;
+        int mayor = (a > b) ? a : b;  // If ternario
         return mayor;
     }
 
     public static int maxA(int[] datos) {
         int mayor = datos[0];
-        for (int elemento : datos) {
+        for (int elemento : datos) {   // for mejorado
             if (elemento > mayor) {
                 mayor = elemento;
             }
@@ -35,14 +35,15 @@ public class Matematicas {
         return mayor;
     }
 
-    // public static void main(String[] args) {
+    public static void main(String[] args) {
     //     int a = 5;
     //     int b = 7;
     //     int[] c = { 5, 8, 3 };
     //     int r = max(a, b);
     //     System.out.println(r);
     //     System.out.println(maxA(c));
-    //     System.out.println(max(7, 4, 3, 9, 2));
-    // }
+        System.out.println(max(7, 4, 3, 9, 2));
+        
+     }
 
 }
