@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestPila",
+            "request": "launch",
+            "mainClass": "pilitas.TestPila",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "ABCD_Arreglos",
+            "request": "launch",
+            "mainClass": "u2Corrimientos.ABCD_Arreglos",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "TestPilas",
+            "request": "launch",
+            "mainClass": "u3.sda_stacks.TestPilas",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
             "name": "MazoV",
             "request": "launch",
             "mainClass": "MazoV",

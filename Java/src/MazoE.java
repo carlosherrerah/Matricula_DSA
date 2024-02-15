@@ -18,8 +18,8 @@ public class MazoE {
         for (CartaE.Palo palo : CartaE.Palo.values()) {
             for (CartaE.Cara cara : CartaE.Cara.values()) {
                 mazo[cuenta] = new CartaE(cara, palo);
-                lista.add(mazo[cuenta]);
-                System.out.println(mazo[cuenta]);
+                //lista.add(mazo[cuenta]);
+                //System.out.println(mazo[cuenta]);
                 cuenta++;
             }
         }
@@ -31,7 +31,7 @@ public class MazoE {
     public void imprimirCartas() {
         for (int i = 0; i < 52; i++) {
             System.out.println(i + ": " + lista.get(i));
-            System.out.println(i + ": " + mazo[i]);
+            //System.out.println(i + ": " + mazo[i]);
         }
     }
 
@@ -41,7 +41,7 @@ public class MazoE {
 
         MazoE[] mazos = new MazoE[2];
         mazos[0] = new MazoE();
-        mazos[0].imprimirCartas();
+        //mazos[0].imprimirCartas();
 
     }
 }

@@ -4,10 +4,11 @@ public class MazoV {
     public MazoV() {
         String cara[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
         String palo[] = { "Trebol", "Picas", "Diamante", "Corazon" };
+    
         int nCaras = cara.length;
         // Ordenado por Palos
         for (int i = 0; i < cara.length * palo.length; i++) {
-            mazo[i] = new CartaV(cara[i % 13], palo[ i / nCaras]);
+            mazo[i] = new CartaV(cara[i % nCaras], palo[ i / nCaras]);
         }
     }
 

@@ -32,15 +32,18 @@ public class Maestro extends Persona {
         String a = super.toString();
         return a + " : " + "Maestro [titulo=" + titulo + ", salario=" + salario + "]";
     }
-    
+
     public static void main(String[] args) {
         Maestro m1 = new Maestro("Pepito", 20, "Pobresor", 123.50);
-        System.out.println(m1);
-        System.out.println(m1.getEdad());
 
-        //Maestro[] m = new Maestro[2];
-        //m[0] = new Maestro("Pepito", 20, "Pobresor", 123.45);
+        System.out.println(m1);
+        System.out.println(m1.getNombre());
+        m1.setTitulo("Chistemas");
+        System.out.println(m1);
+
+        Maestro[] m = new Maestro[2];
+        m[0] = new Maestro("Pepito", 20, "Pobresor", 123.45);
 
     }
-    
+
 }

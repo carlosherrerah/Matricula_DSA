@@ -1,13 +1,13 @@
 package u1;
 
 public class Persona {
-    String nombre;
-    private int edad;
+    private String nombre;
+    private  int edad;
 
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
-        // System.out.println("Estamos en la Persona");
+        System.out.println("Estamos en la Persona");
     }
 
     public String getNombre() {
