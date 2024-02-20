@@ -1,4 +1,4 @@
-package pilitas;
+package pilitasB;
 
 public class Nodo {
     String matricula;

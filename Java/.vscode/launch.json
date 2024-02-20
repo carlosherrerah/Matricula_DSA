@@ -8,6 +8,20 @@
             "type": "java",
             "name": "TestPila",
             "request": "launch",
+            "mainClass": "pilitasB.TestPila",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "TestPila",
+            "request": "launch",
+            "mainClass": "pilitasA.TestPila",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "TestPila",
+            "request": "launch",
             "mainClass": "pilitas.TestPila",
             "projectName": "Java_6f86a772"
         },
