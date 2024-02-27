@@ -1,0 +1,21 @@
+Algorithm Infix to Postfix 
+Polish chains.(Q = Infix Expression Vector, P = Postfix Expression Vector).
+
+1.	Put "(" at the beginning of expression Q and 
+	Put ")" at the end of expression Q
+2. 	Scan Q from left to right and repeat step 3 to 6 for each element of Q
+	3. If an operand is encountered add it to P
+	4. If is "(" push it onto STACK
+	5. If an operator is encountered then:
+		a.	Repeatedly pop from the STACK and add to P each operator (on top of STACK) 
+			which has same or higher precedence than the operator.
+		b. 	Add operator to STACK
+	6. If ")" is encountered then
+		a. 	Repeatedly pop from the STACK and add to P each operator (on top of stack)
+			until a "(" is encountered
+		b. 	pop from STACK the left parenthesis. Do not add to P.
+7. Print P
+
+
+
+
