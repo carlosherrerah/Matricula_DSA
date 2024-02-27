@@ -6,9 +6,72 @@
     "configurations": [
         {
             "type": "java",
-            "name": "TestPila",
+            "name": "Arreglos",
             "request": "launch",
-            "mainClass": "pilitasB.TestPila",
+            "mainClass": "_personal.Arreglos",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "polaca_valor",
+            "request": "launch",
+            "mainClass": "_personal.polacas.polaca_valor",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "polaca_postfix",
+            "request": "launch",
+            "mainClass": "_personal.polacas.polaca_postfix",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "polaca_postfix",
+            "request": "launch",
+            "mainClass": "_personal.Polacas.polaca_postfix",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Menu",
+            "request": "launch",
+            "mainClass": "_personal.Menu",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "DatePicker",
+            "request": "launch",
+            "mainClass": "_personal.DatePicker",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "VentanaJFrame",
+            "request": "launch",
+            "mainClass": "_personal.VentanaJFrame",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "VentanaJPanel",
+            "request": "launch",
+            "mainClass": "_personal.VentanaJPanel",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "VentanaSwing",
+            "request": "launch",
+            "mainClass": "_personal.VentanaSwing",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Enum",
+            "request": "launch",
+            "mainClass": "_personal.Enum",
             "projectName": "Java_6f86a772"
         },
         {
@@ -22,161 +85,24 @@
             "type": "java",
             "name": "TestPila",
             "request": "launch",
-            "mainClass": "pilitas.TestPila",
+            "mainClass": "pilitasB.TestPila",
             "projectName": "Java_6f86a772"
         },
         {
             "type": "java",
-            "name": "ABCD_Arreglos",
+            "name": "Conceptos",
             "request": "launch",
-            "mainClass": "u2Corrimientos.ABCD_Arreglos",
-            "projectName": "Java_6f86a772"
+            "mainClass": "_personal.Conceptos",
+            "projectName": "Java_6f86a772",
+            "vmArgs": "-enableassertions"
         },
         {
             "type": "java",
-            "name": "TestPilas",
-            "request": "launch",
-            "mainClass": "u3.sda_stacks.TestPilas",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "MazoV",
-            "request": "launch",
-            "mainClass": "MazoV",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "MazoE",
-            "request": "launch",
-            "mainClass": "MazoE",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Maestro",
-            "request": "launch",
-            "mainClass": "u1.Maestro",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Mazo",
-            "request": "launch",
-            "mainClass": "Mazo",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Persona",
-            "request": "launch",
-            "mainClass": "u1.Persona",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Cartas",
-            "request": "launch",
-            "mainClass": "u1.Cartas",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "MazoDeCartas",
-            "request": "launch",
-            "mainClass": "u1.MazoDeCartas",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "E04TestArreglos",
-            "request": "launch",
-            "mainClass": "u1.E04TestArreglos",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Arreglos",
-            "request": "launch",
-            "mainClass": "functions.Arreglos",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Matematicas",
-            "request": "launch",
-            "mainClass": "functions.Matematicas",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "TestMaestro",
-            "request": "launch",
-            "mainClass": "u1.TestMaestro",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Matematicas",
-            "request": "launch",
-            "mainClass": "Functions.Matematicas",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Arreglos",
-            "request": "launch",
-            "mainClass": "Functions.Arreglos",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "E03SeekArray",
-            "request": "launch",
-            "mainClass": "u1.E03SeekArray",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "App",
+            "name": "My App",
             "request": "launch",
             "mainClass": "App",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Operaciones",
-            "request": "launch",
-            "mainClass": "Operaciones",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Prueba",
-            "request": "launch",
-            "mainClass": "Prueba",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "SeekArray",
-            "request": "launch",
-            "mainClass": "SeekArray",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "E01Argumentos",
-            "request": "launch",
-            "mainClass": "u1.E01Argumentos",
-            "projectName": "Java_6f86a772"
+            "projectName": "Java",
+            "vmArgs": "-enableassertions"
         }
     ]
 }

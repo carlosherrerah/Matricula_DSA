@@ -43,13 +43,10 @@ public class Nodo {
     public void setSig(Nodo sig) {
         this.sig = sig;
     }
-/*
 
     @Override
     public String toString() {
         return "Nodo [id=" + id + ", nombre=" + nombre + ", sig=" + sig + "]";
     }
-*/
-    
 
 }

@@ -3,8 +3,12 @@ package pilitasB;
 public class TestPila {
     public static void main(String[] args) {
         Nodo reg = new Nodo();
-        Pila duracell = new Pila();
+        Pila duracell = new Pila(10);
+        Pila energizer[] = new Pila[5];
+        //Pila rayoback = new Pila();
+
         System.out.println(duracell);
+        duracell.pop();
 
         reg.matricula = "up1";
         reg.setNombre("pepito");
@@ -26,7 +30,11 @@ public class TestPila {
         duracell.show();
         System.out.println(duracell.size());
     
-
+        System.out.println(duracell.pop());
+        System.out.println(duracell.pop());
+        System.out.println(duracell.pop());
+        System.out.println(duracell.pop());
+        System.out.println(duracell.pop());
     }
 
     

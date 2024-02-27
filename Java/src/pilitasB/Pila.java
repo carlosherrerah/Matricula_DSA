@@ -2,19 +2,38 @@ package pilitasB;
 
 public class Pila {
     Nodo top = null;
+    int max = 0;
+    int size = 0;
 
+    public Pila(int max) {
+        this.max = max;
+    }
 
     public void push(String id, String nombre, int cuatri) {
+        if (size()<max) {
         Nodo nuevo = new Nodo(id, nombre, cuatri);
         nuevo.sig = top;
         top = nuevo;
+        size++;
+        }
     }
 
     public void push(Nodo reg) {
-        Nodo nuevo = new Nodo(reg);
-        nuevo.sig = top;
-        top = nuevo;
-    }
+        if (max == 0 ){
+            Nodo nuevo = new Nodo(reg);
+            nuevo.sig = top;
+            top = nuevo;
+        } else {
+            while (max > size){
+                Nodo nuevo = new Nodo(reg);
+                nuevo.sig = top;
+                top = nuevo;
+                size++;
+            }
+            System.out.println("No se pueden añadir más nodos");
+            }    
+        } 
+    
 
     public void show(){
         Nodo actual = top;
@@ -53,6 +72,24 @@ public class Pila {
     public String toString() {
         return "Pila [top=" + top + "]";
     }
-    
+
+    public boolean isEmpty() {
+        boolean r = false;
+        if (top == null) {
+            r = true;
+        }
+        return r;
+    }
+
+    public Nodo pop() {
+        Nodo actual = null;
+        if ( !isEmpty()) {
+            actual = top;
+            top = top.sig;
+            actual.sig = null;
+            size--;
+        }
+        return actual;
+    }
     
 }

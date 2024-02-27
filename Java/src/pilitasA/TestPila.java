@@ -4,14 +4,17 @@ public class TestPila {
     public static void main(String[] args) {
         Nodo reg = new Nodo();
 
-        Pila duracell = new Pila();
+        Pila duracell = new Pila(5);
+        Pila rayoback = new Pila(10);
+        
+        Pila[] energizer = new Pila[5];
 
-        System.out.println(duracell);
+        System.out.println(duracell.isEmpty());
 
         reg.id = 32;
         reg.setNombre("Zac");
         duracell.push(reg);
-        System.out.println(duracell);
+        System.out.println(duracell.isEmpty());
 
         reg.id = 1;
         reg.setNombre("Ags");
@@ -29,6 +32,15 @@ public class TestPila {
 
         System.out.println("--- Paso de la muerte ---");
         duracell.show();
+        System.out.println(duracell.size());
+
+        System.out.println(duracell.isExist("Ags"));
+
+        System.out.println(duracell.pop());
+        System.out.println(duracell.pop());
+        System.out.println(duracell.pop());
+        System.out.println(duracell.pop());
+        System.out.println(duracell.pop());
 
         /*
         reg.setId(2);
