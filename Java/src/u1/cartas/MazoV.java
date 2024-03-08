@@ -1,3 +1,4 @@
+package u1.cartas;
 public class MazoV {
     CartaV[] mazo = new CartaV[52];
 

@@ -1,4 +1,4 @@
-package pilitasB;
+package u2.pilitasB;
 
 public class Nodo {
     String matricula;

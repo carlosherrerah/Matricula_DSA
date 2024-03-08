@@ -1,4 +1,4 @@
-package u2Corrimientos;
+package u2;
 
 import functions.Arreglos;
 

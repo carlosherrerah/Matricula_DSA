@@ -1,3 +1,4 @@
+package u1.cartas;
 
 public class CartaV {
     private String cara;  // 1,2,3..10, J,Q,K

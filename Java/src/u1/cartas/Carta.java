@@ -1,3 +1,4 @@
+package u1.cartas;
 public class Carta {
     String cara; // 1,2,3,,10,J,Q,K
     String palo; // D, T, C, P

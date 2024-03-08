@@ -1,4 +1,4 @@
-package pilitasB;
+package u2.pilitasB;
 
 public class TestPila {
     public static void main(String[] args) {

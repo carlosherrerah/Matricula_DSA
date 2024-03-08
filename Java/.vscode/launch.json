@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Colecciones",
+            "request": "launch",
+            "mainClass": "_personal.Colecciones",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Scroll",
+            "request": "launch",
+            "mainClass": "_personal.Scroll",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Cafe",
+            "request": "launch",
+            "mainClass": "_personal.Cafe",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "TryCatch",
+            "request": "launch",
+            "mainClass": "_personal.TryCatch",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "Jframe",
+            "request": "launch",
+            "mainClass": "_personal.Jframe",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
             "name": "Arreglos",
             "request": "launch",
             "mainClass": "_personal.Arreglos",

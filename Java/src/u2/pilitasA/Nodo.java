@@ -1,4 +1,4 @@
-package pilitasA;
+package u2.pilitasA;
 
 public class Nodo {
     int id;
