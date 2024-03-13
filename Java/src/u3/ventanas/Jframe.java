@@ -40,7 +40,7 @@ public class Jframe extends JFrame {
 
   public Jframe() {
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setBounds(100, 100, 450, 300);
+    setBounds(100, 100, 450, 500);
     contentPane = new JPanel();
     contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -49,30 +49,30 @@ public class Jframe extends JFrame {
 
     // Agregar Componentes
     textField = new JTextField();
-    textField.setBounds(170, 80, 120, 20);
+    textField.setBounds(100, 100, 100, 20);
     contentPane.add(textField);
     textField.setColumns(10);
 
     JButton btnCalcular = new JButton("Tabla");
-    btnCalcular.setBounds(300, 80, 120, 20);
+    btnCalcular.setBounds(200, 100, 100, 20);
     contentPane.add(btnCalcular);
 
-    JTextArea textArea = new JTextArea(12, 30);
-    textArea.setBounds(170, 150, 120, 150);
-    JScrollPane scrollPane = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
-        JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
-    scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+    JTextArea textArea = new JTextArea();
+    textArea.setBounds(150, 150, 50, 200);
 
-    textArea.setLineWrap(true);
+    JScrollPane scrollPane = new  JScrollPane(textArea);
+    scrollPane.setBounds(150,150, 100, 250);
+	  scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+
+
     contentPane.add(scrollPane);
-    contentPane.add(textArea);
-
+    //contentPane.add(textArea);
 
     btnCalcular.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         int x = Integer.parseInt(textField.getText());
         int r = 0;
-        textArea.setText("Tabla del numero: " + x + "\n\n");
+        textArea.setText("Tabla del: " + x + "\n\n");
         for (int i = 1; i <= 10; i++) {
           r = x * i;
           textArea.append(x + " X " + i + " = " + r + "\n");
@@ -83,6 +83,5 @@ public class Jframe extends JFrame {
       }
     });
   }
-
 
 }

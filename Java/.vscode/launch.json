@@ -6,130 +6,24 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Colecciones",
+            "name": "TablaB",
             "request": "launch",
-            "mainClass": "_personal.Colecciones",
+            "mainClass": "u3.ventanas.TablaB",
             "projectName": "Java_6f86a772"
         },
         {
             "type": "java",
-            "name": "Scroll",
+            "name": "Tabla",
             "request": "launch",
-            "mainClass": "_personal.Scroll",
+            "mainClass": "u3.ventanas.Tabla",
             "projectName": "Java_6f86a772"
         },
         {
             "type": "java",
-            "name": "Cafe",
+            "name": "Tabla_AB",
             "request": "launch",
-            "mainClass": "_personal.Cafe",
+            "mainClass": "u3.ventanas.Tabla_AB",
             "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "TryCatch",
-            "request": "launch",
-            "mainClass": "_personal.TryCatch",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Jframe",
-            "request": "launch",
-            "mainClass": "_personal.Jframe",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Arreglos",
-            "request": "launch",
-            "mainClass": "_personal.Arreglos",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "polaca_valor",
-            "request": "launch",
-            "mainClass": "_personal.polacas.polaca_valor",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "polaca_postfix",
-            "request": "launch",
-            "mainClass": "_personal.polacas.polaca_postfix",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "polaca_postfix",
-            "request": "launch",
-            "mainClass": "_personal.Polacas.polaca_postfix",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Menu",
-            "request": "launch",
-            "mainClass": "_personal.Menu",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "DatePicker",
-            "request": "launch",
-            "mainClass": "_personal.DatePicker",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "VentanaJFrame",
-            "request": "launch",
-            "mainClass": "_personal.VentanaJFrame",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "VentanaJPanel",
-            "request": "launch",
-            "mainClass": "_personal.VentanaJPanel",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "VentanaSwing",
-            "request": "launch",
-            "mainClass": "_personal.VentanaSwing",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Enum",
-            "request": "launch",
-            "mainClass": "_personal.Enum",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "TestPila",
-            "request": "launch",
-            "mainClass": "pilitasA.TestPila",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "TestPila",
-            "request": "launch",
-            "mainClass": "pilitasB.TestPila",
-            "projectName": "Java_6f86a772"
-        },
-        {
-            "type": "java",
-            "name": "Conceptos",
-            "request": "launch",
-            "mainClass": "_personal.Conceptos",
-            "projectName": "Java_6f86a772",
-            "vmArgs": "-enableassertions"
         },
         {
             "type": "java",
