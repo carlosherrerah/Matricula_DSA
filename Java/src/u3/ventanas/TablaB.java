@@ -14,7 +14,7 @@ public class TablaB extends JFrame {
         JPanel panelito = new JPanel();
         panelito.setBorder(new EmptyBorder(5,5,5,5));
         setContentPane(panelito);
-        panelito.setLayout(null);  // layout absoluto x,y
+        panelito.setLayout(null); /* // layout absoluto x,y
 
         // Agregar Componentes
         JTextField textField = new JTextField();
@@ -46,9 +46,33 @@ public class TablaB extends JFrame {
                 textArea.append(cadena);
 
             }
-        });
+        }); */
         
+        String[][] teclado = {
+            {"7", "8", "9", "+"},
+            {"4", "5", "6", "-"},
+            {"1", "2", "3", "="}
+        };
 
+        int m = teclado.length;
+        int n = teclado[0].length;
+        int x = 100, y = 200;      // punto de partida
+        //int v=x;
+        int ancho= 70, alto = 50;  // tamaño del boton
+        int dx = 20, dy = 10;      // separacion entre botones
+
+        JButton[][] botones;
+        botones = new JButton[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j <n; j++) {
+                botones[i][j] = new JButton(teclado[i][j]);
+                botones[i][j].setBounds(x+j*(ancho+dx), y+i*(alto+dy), ancho, alto);  //linea de oro
+                panelito.add(botones[i][j]);
+                //x= x+ancho+dx;
+            }
+            //x=v;
+            //y= y+alto+dy;
+        } 
 
     }
 

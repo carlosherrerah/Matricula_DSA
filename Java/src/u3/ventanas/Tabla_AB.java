@@ -22,13 +22,16 @@ public class Tabla_AB extends JFrame {
         };
         int m = teclado.length;
         int n = teclado[0].length;
+        int x=   100,    y=200;    // punto de partida
+        int ancho=70, alto= 50;    // Dimensiones del boton 
+        int dx=   20,   dy= 10;    // separacion entre botones  
 
         JButton[][] boton;
         boton = new JButton[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 boton[i][j] = new JButton(teclado[i][j]);
-                boton[i][j].setBounds(250, 100, 100, 25); 
+                boton[i][j].setBounds(x + j*(ancho+dx), y + i*(alto+dy), ancho, alto); 
                 panelito.add(boton[i][j]);
             }
         }
@@ -52,8 +55,7 @@ public class Tabla_AB extends JFrame {
         panelito.add(scrollPane);    
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);    
 
-
-
+        
     }
 
     public static void main(String[] args) {

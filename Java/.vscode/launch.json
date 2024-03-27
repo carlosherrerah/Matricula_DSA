@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GridBagLayoutExample",
+            "request": "launch",
+            "mainClass": "u3.ventanas.GridBagLayoutExample",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "GridLayoutExample",
+            "request": "launch",
+            "mainClass": "u3.ventanas.GridLayoutExample",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "EjemploGridBagLayout",
+            "request": "launch",
+            "mainClass": "u3.ventanas.EjemploGridBagLayout",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "EjemploGridLayout",
+            "request": "launch",
+            "mainClass": "u3.ventanas.EjemploGridLayout",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "DatePicker",
+            "request": "launch",
+            "mainClass": "u3.ventanas.DatePicker",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
+            "name": "TablaA",
+            "request": "launch",
+            "mainClass": "u3.ventanas.TablaA",
+            "projectName": "Java_6f86a772"
+        },
+        {
+            "type": "java",
             "name": "TablaB",
             "request": "launch",
             "mainClass": "u3.ventanas.TablaB",
